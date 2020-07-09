@@ -9,10 +9,4 @@ min_version = "0.41.0"
 
 [author]
   name = "Oledz Web <info@oledz.world>"
-  homepage = ""
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+  homepage = "https://oledz.github.io"
