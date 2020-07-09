@@ -3,16 +3,10 @@ license = "MIT"
 licenselink = "https://github.com/oledz/risma/blob/master/LICENSE"
 description = "A responsive, minimal and clean theme for a development or consulting website."
 homepage = "https://oledz.github.io/risma"
-tags = [consulting, CV, responsive, clean, mobile, landing page, blog]
-features = [responsive, google analytics, disqus, syntax highlighting, customizable]
+tags = ["consulting", "CV", "responsive", "clean", "mobile", "landing page", "blog"]
+features = ["responsive", "google analytics", "disqus", "syntax highlighting", "customizable"]
 min_version = "0.41.0"
 
 [author]
   name = "Oledz Web <info@oledz.world>"
-  homepage = ""
-
-# If porting an existing theme
-[original]
-  name = ""
-  homepage = ""
-  repo = ""
+  homepage = "https://oledz.github.io"
