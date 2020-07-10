@@ -23,7 +23,12 @@
             {{ block "main" . }} {{ end }}
             {{ block "footer" . }} {{ end }}
         </div>
+        <div class="section section-hero bg-gray">
+            {{ block "main" . }} {{ end }}
+        </div>
+        {{ block "footer" . }}
+            {{ partial "footer.html" . }}
+        {{ end }}
         {{ partial "mathjax.html" . }}
-        {{ partial "footer.html" . }}
     </body>
 </html>
