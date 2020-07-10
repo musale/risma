@@ -1,20 +1,26 @@
 <header class="navbar">
-  <section class="navbar-section docs-brand">
-    <a class="docs-logo" href='{{"/" | absURL }}'>
-      {{if .Site.Params.logoUrl}}
-        <img src="{{.Site.Params.logoUrl}}" alt="{{.Site.Title}} Logo" />
-      {{end}}
-      <h2 class="navbar-brand mr-2">{{.Site.Title}}</h2>
+  {{if .Site.Params.logoUrl}}
+    <section class="navbar-section">
+      <img src="{{.Site.Params.logoUrl}}" alt="{{.Site.Title}} Logo" />
+    </section>
+  {{end}}
+  {{if .Site.Title}}
+    <section>
+      <a href="..." class="navbar-brand mr-2">{{.Site.Title}}</a>
       {{if .Site.Params.tagline}}
         <small class="label label-secondary text-bold">{{.Site.Params.tagline}}</small>
       {{end}}
-    </a>
-  </section>
+    </section>
+  {{end}}
+
+  {{if .Site.Menus.main}}
   <section class="navbar-center">
     {{ range .Site.Menus.main }}
     <a href="{{ .URL }}" title="{{ .Name }}" class="btn btn-link">{{ .Name }}</a>
     {{ end }}
   </section>
+  {{end}}
+  
   <section class="navbar-section">
     <div class="tile tile-centered">
       <div class="tile-icon">
