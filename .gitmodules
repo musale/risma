@@ -1,0 +1,3 @@
+[submodule "exampleSite/themes/risma"]
+	path = exampleSite/themes/risma
+	url = https://github.com/oledz/risma.git
