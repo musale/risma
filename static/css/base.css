@@ -19,3 +19,40 @@ body {
 footer {
   flex-shrink: 0;
 }
+
+.docs-brand {
+  color:#5755d9;
+  height:2rem;
+  left:1.5rem;
+  position:fixed;
+  top:.85rem
+ }
+ .docs-brand .docs-logo {
+  align-items:center;
+  border-radius:.1rem;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
+  -ms-flex-align:center;
+  font-size:.7rem;
+  height:2rem;
+  padding:.2rem;
+  width:auto
+ }
+ .docs-brand .docs-logo:focus,
+ .docs-brand .docs-logo:hover {
+  text-decoration:none
+ }
+ .docs-brand .docs-logo img {
+  display:inline-block;
+  height:auto;
+  width:1.6rem
+ }
+ .docs-brand .docs-logo h2 {
+  display:inline-block;
+  font-size:.8rem;
+  font-weight:700;
+  line-height:1.5rem;
+  margin-bottom:1.5rem;
+  margin-left:.5rem;
+  margin-right:.3rem
+ }
