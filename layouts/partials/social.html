@@ -1,5 +1,60 @@
-{{if isset .Site.Params.social "github"}}
+{{if isset .Site.Params.social "email"}}
     <p>
-        <a href="https://github.com/oledz/risma" target="_blank">GitHub</a> ·
+        <a href="mailto: {{.Site.Params.social.email}}" target="_blank"><i class="icon icon-2x icon-mail"></i></a> ·
+    </p>
+{{end}}
+{{if isset .Site.Params.social "facebook"}}
+    <p>
+        <a href="https://facebook.com/{{.Site.Params.social.Facebook}}" target="_blank">Facebook</a> ·
+    </p>
+{{end}}
+{{if isset .Site.Params.social "twitter"}}
+    <p>
+        <a href="https://twitter.com/{{.Site.Params.Social.Twitter}}" target="_blank">Twitter</a> ·
+    </p>
+{{end}}
+{{if isset .Site.Params.social "instagram"}}
+    <p>
+        <a href="https://instagram.com/{{.Site.Params.Social.instagram}}" target="_blank">Instagram</a> ·
+    </p>
+{{end}}
+{{if isset .Site.Params.social "tumblr"}}
+    <p>
+        <a href="https://tumblr.com/{{.Site.Params.Social.tumblr}}" target="_blank">Tumblr</a> ·
+    </p>
+{{end}}
+{{if isset .Site.Params.social "reddit"}}
+    <p>
+        <a href="https://reddit.com/{{.Site.Params.Social.reddit}}" target="_blank">Reddit</a> ·
+    </p>
+{{end}}
+{{if isset .Site.Params.social "pinterest"}}
+    <p>
+        <a href="https://pinterest.com/{{.Site.Params.Social.pinterest}}" target="_blank">Pinterest</a> ·
+    </p>
+{{end}}
+{{if isset .Site.Params.social "youtube"}}
+    <p>
+        <a href="https://youtube.com/{{.Site.Params.Social.youtube}}" target="_blank">YouTube</a> ·
+    </p>
+{{end}}
+{{if isset .Site.Params.social "vimeo"}}
+    <p>
+        <a href="https://vimeo.com/{{.Site.Params.Social.vimeo}}" target="_blank">Vimeo</a> ·
+    </p>
+{{end}}
+{{if isset .Site.Params.social "vk"}}
+    <p>
+        <a href="https://vkontakte.com/{{.Site.Params.Social.vk}}" target="_blank">VK</a> ·
+    </p>
+{{end}}
+{{if isset .Site.Params.social "linkedin"}}
+    <p>
+        <a href="https://linked.com/{{.Site.Params.Social.linkedin}}" target="_blank">LinkedIn</a> ·
+    </p>
+{{end}}
+{{if isset .Site.Params.social "medium"}}
+    <p>
+        <a href="https://medium.com/{{.Site.Params.Social.medium}}" target="_blank">Medium</a> ·
     </p>
 {{end}}
