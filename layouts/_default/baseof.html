@@ -16,12 +16,14 @@
     </head>
 
     <body>
-        {{ block "head" .}}
-            {{ partial "header.html" . }}
-        {{ end }}
+        <div class="main container mx-2">
+            {{ block "head" .}}
+                {{ partial "header.html" . }}
+            {{ end }}
 
-        <div class="section">
-            {{ block "main" . }}{{ end }}
+            <div class="section">
+                {{ block "main" . }}{{ end }}
+            </div>
         </div>
 
         {{ block "footer" . }}
