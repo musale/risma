@@ -17,15 +17,13 @@
 
     <body>
         {{ block "head" .}}
-            {{ partial "head.html" . }}
+            {{ partial "header.html" . }}
         {{ end }}
-        <div id="main" class="section">
-            {{ block "main" . }} {{ end }}
-            {{ block "footer" . }} {{ end }}
+
+        <div class="section">
+            {{ block "main" . }}{{ end }}
         </div>
-        <div class="section section-hero bg-gray">
-            {{ block "main" . }} {{ end }}
-        </div>
+
         {{ block "footer" . }}
             {{ partial "footer.html" . }}
         {{ end }}
