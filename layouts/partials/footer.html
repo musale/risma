@@ -1,13 +1,15 @@
 <footer class="bg-secondary text-center">
     <div class="docs-footer container grid-lg" id="copyright">
-        <p>
-            <a href="https://github.com/oledz/risma" target="_blank">GitHub</a> · Version <span
-                class="version"></span>
-        </p>
+        {{ partial "social.html" . }}
+        
         <p>Designed and built with <span class="text-error">&hearts;</span> by <a href="https://oledz.github.io"
                 target="_blank">Oledz Web</a>. Licensed under the <a
                 href="https://github.com/oledz/risma/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
     </div>
+
+    <!-- GDPR -->
+    {{ $script := resources.Get "js/main.js" | minify | fingerprint -}}
+	<script src="{{ $script.Permalink }}" {{ printf "integrity=%q" $script.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
 </footer>
 {{ if .Site.GoogleAnalytics }}
     {{ template "_internal/google_analytics_async.html" . }}
