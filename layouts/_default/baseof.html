@@ -16,17 +16,12 @@
     </head>
 
     <body>
-        <div id="container">
-            {{ block "head" .}}
-                <div id="menu">
-                    {{ partial "head.html" . }}
-                </div>
-            {{ end }}
-
-            <div id="content">
-                {{ block "main" . }} {{ end }}
-                {{ block "footer" . }} {{ end }}
-            </div>
+        {{ block "head" .}}
+            {{ partial "head.html" . }}
+        {{ end }}
+        <div id="main" class="section">
+            {{ block "main" . }} {{ end }}
+            {{ block "footer" . }} {{ end }}
         </div>
         {{ partial "mathjax.html" . }}
         {{ partial "footer.html" . }}

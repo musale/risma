@@ -10,7 +10,7 @@ body {
   font-size: medium;
   background-color: bisque;
 }
-.section {
+#main {
   flex: 1 0 auto;
 }
 footer {
