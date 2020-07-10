@@ -22,4 +22,41 @@ theme = "risma"
     weight = 40
 
 # Usernames for Email, Social Media and Online Accounts
+[params.Social]
+    email = "info@risma.com"
+    facebook = "risma"
+    twitter = "risma"
+	instagram = "risma"
+	tumblr = "risma"
+	reddit = "risma"
+	pinterest = "risma"
+	youtube = "risma"
+    vimeo = "risma"
+	weibo = "risma"
+	vk = "risma"
+	linkedin = "risma"
 
+	# Writing
+    medium = ""
+	blogger = ""
+	wordpress = ""
+
+	# Creative & Visual
+    dribbble = ""
+	behance = ""
+	deviantart = ""
+	flickr = ""
+
+    # Audio & Music
+    soundcloud = ""
+
+	# Programming
+    github = ""
+	stackoverflow = ""
+	gitlab = ""
+	codepen = ""
+
+    # Academic
+    googlescholar = ""
+    impactstory = ""
+    orcid = ""  
