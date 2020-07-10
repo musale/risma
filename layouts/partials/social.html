@@ -1,60 +1,89 @@
+<!-- Social  -->
 {{if isset .Site.Params.social "email"}}
-    <p>
-        <a href="mailto: {{.Site.Params.social.email}}" target="_blank"><i class="icon icon-2x icon-mail"></i></a> ·
-    </p>
+<a href="mailto: {{.Site.Params.social.email}}" target="_blank"><i class="icon icon-2x icon-mail"></i></a> ·
 {{end}}
 {{if isset .Site.Params.social "facebook"}}
-    <p>
-        <a href="https://facebook.com/{{.Site.Params.social.Facebook}}" target="_blank">Facebook</a> ·
-    </p>
+<a href="https://facebook.com/{{.Site.Params.social.Facebook}}" target="_blank">Facebook</a> ·
 {{end}}
 {{if isset .Site.Params.social "twitter"}}
-    <p>
-        <a href="https://twitter.com/{{.Site.Params.Social.Twitter}}" target="_blank">Twitter</a> ·
-    </p>
+<a href="https://twitter.com/{{.Site.Params.Social.Twitter}}" target="_blank">Twitter</a> ·
 {{end}}
 {{if isset .Site.Params.social "instagram"}}
-    <p>
-        <a href="https://instagram.com/{{.Site.Params.Social.instagram}}" target="_blank">Instagram</a> ·
-    </p>
+<a href="https://instagram.com/{{.Site.Params.Social.instagram}}" target="_blank">Instagram</a> ·
 {{end}}
 {{if isset .Site.Params.social "tumblr"}}
-    <p>
-        <a href="https://tumblr.com/{{.Site.Params.Social.tumblr}}" target="_blank">Tumblr</a> ·
-    </p>
+<a href="https://tumblr.com/{{.Site.Params.Social.tumblr}}" target="_blank">Tumblr</a> ·
 {{end}}
 {{if isset .Site.Params.social "reddit"}}
-    <p>
-        <a href="https://reddit.com/{{.Site.Params.Social.reddit}}" target="_blank">Reddit</a> ·
-    </p>
+<a href="https://reddit.com/{{.Site.Params.Social.reddit}}" target="_blank">Reddit</a> ·
 {{end}}
 {{if isset .Site.Params.social "pinterest"}}
-    <p>
-        <a href="https://pinterest.com/{{.Site.Params.Social.pinterest}}" target="_blank">Pinterest</a> ·
-    </p>
+<a href="https://pinterest.com/{{.Site.Params.Social.pinterest}}" target="_blank">Pinterest</a> ·
 {{end}}
 {{if isset .Site.Params.social "youtube"}}
-    <p>
-        <a href="https://youtube.com/{{.Site.Params.Social.youtube}}" target="_blank">YouTube</a> ·
-    </p>
+<a href="https://youtube.com/{{.Site.Params.Social.youtube}}" target="_blank">YouTube</a> ·
 {{end}}
 {{if isset .Site.Params.social "vimeo"}}
-    <p>
-        <a href="https://vimeo.com/{{.Site.Params.Social.vimeo}}" target="_blank">Vimeo</a> ·
-    </p>
+<a href="https://vimeo.com/{{.Site.Params.Social.vimeo}}" target="_blank">Vimeo</a> ·
 {{end}}
 {{if isset .Site.Params.social "vk"}}
-    <p>
-        <a href="https://vkontakte.com/{{.Site.Params.Social.vk}}" target="_blank">VK</a> ·
-    </p>
+<a href="https://vkontakte.com/{{.Site.Params.Social.vk}}" target="_blank">VK</a> ·
 {{end}}
 {{if isset .Site.Params.social "linkedin"}}
-    <p>
-        <a href="https://linked.com/{{.Site.Params.Social.linkedin}}" target="_blank">LinkedIn</a> ·
-    </p>
+<a href="https://linked.com/{{.Site.Params.Social.linkedin}}" target="_blank">LinkedIn</a> ·
 {{end}}
+
+<!-- Writing -->
 {{if isset .Site.Params.social "medium"}}
-    <p>
-        <a href="https://medium.com/{{.Site.Params.Social.medium}}" target="_blank">Medium</a> ·
-    </p>
+<a href="https://medium.com/{{.Site.Params.Social.medium}}" target="_blank">Medium</a> ·
+{{end}}
+{{if isset .Site.Params.social "blogger"}}
+<a href="https://blogger.com/{{.Site.Params.Social.blogger}}" target="_blank">Blogger</a> ·
+{{end}}
+{{if isset .Site.Params.social "wordpress"}}
+<a href="https://wordpress.com/{{.Site.Params.Social.wordpress}}" target="_blank">WordPress</a> ·
+{{end}}
+
+<!-- Creative and Visual -->
+{{if isset .Site.Params.social "dribbble"}}
+<a href="https://dribbble.com/{{.Site.Params.Social.dribbble}}" target="_blank">Dribbble</a> ·
+{{end}}
+{{if isset .Site.Params.social "behance"}}
+<a href="https://behance.com/{{.Site.Params.Social.behance}}" target="_blank">Behance</a> ·
+{{end}}
+{{if isset .Site.Params.social "devianart"}}
+<a href="https://devianart.com/{{.Site.Params.Social.devianart}}" target="_blank">Devianart</a> ·
+{{end}}
+{{if isset .Site.Params.social "flickr"}}
+<a href="https://flickr.com/{{.Site.Params.Social.flickr}}" target="_blank">Flickr</a> ·
+{{end}}
+
+<!-- Audio and Music -->
+{{if isset .Site.Params.social "soundcloud"}}
+<a href="https://soundcloud.com/{{.Site.Params.Social.soundcloud}}" target="_blank">SoundCloud</a> ·
+{{end}}
+
+<!-- Programming -->
+{{if isset .Site.Params.social "github"}}
+<a href="https://github.com/{{.Site.Params.Social.github}}" target="_blank">GitHub</a> ·
+{{end}}
+{{if isset .Site.Params.social "gitlab"}}
+<a href="https://gitlab.com/{{.Site.Params.Social.gitlab}}" target="_blank">GitLab</a> ·
+{{end}}
+{{if isset .Site.Params.social "stackoverflow"}}
+<a href="https://stackoverflow.com/{{.Site.Params.Social.stackoverflow}}" target="_blank">StackFlow</a> ·
+{{end}}
+{{if isset .Site.Params.social "codepen"}}
+<a href="https://codepen.com/{{.Site.Params.Social.codepen}}" target="_blank">Codepen</a> ·
+{{end}}
+
+<!-- Academic -->
+{{if isset .Site.Params.social "googlescholar"}}
+<a href="https://googlescholar.com/{{.Site.Params.Social.googlescholar}}" target="_blank">Google Scholar</a> ·
+{{end}}
+{{if isset .Site.Params.social "impactstory"}}
+<a href="https://impactstory.com/{{.Site.Params.Social.impactstory}}" target="_blank">Impact Story</a> ·
+{{end}}
+{{if isset .Site.Params.social "orcid"}}
+<a href="https://orcid.com/{{.Site.Params.Social.orcid}}" target="_blank">Orcid</a> ·
 {{end}}
