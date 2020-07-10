@@ -1,10 +1,10 @@
 <header class="navbar bg-secondary container mx-2 hp-2">
   <section class="navbar-section">
     {{if .Site.Params.logoUrl}}
-      <img width="60" height="60" src="{{.Site.Params.logoUrl}}" alt="{{.Site.Title}}" />
+      <img class="mx-1" width="60" height="60" src="{{.Site.Params.logoUrl}}" alt="{{.Site.Title}}" />
     {{end}}
     {{if .Site.Title}}
-      <dl class="navbar-brand">
+      <dl>
         <dt class="h3">{{.Site.Title}}</dt>
         {{if .Site.Params.tagline}}
           <dt class="text-muted">{{.Site.Params.tagline | lower}}</dt>
