@@ -1,0 +1,25 @@
+baseURL = "https://oledz.github.com/risma"
+languageCode = "en-us"
+title = "Risma"
+theme = "risma"
+
+# Menus
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 10
+[[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 20
+[[menu.main]]
+    name = "Pricing"
+    url = "/pricing"
+    weight = 30
+[[menu.main]]
+    name = "Contact"
+    url = "/contacts"
+    weight = 40
+
+# Usernames for Email, Social Media and Online Accounts
+
