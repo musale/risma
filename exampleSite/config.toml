@@ -7,6 +7,11 @@ theme = "risma"
     tagline = "The Best Hugo Theme"
     logoUrl = "https://picturepan2.github.io/spectre/img/spectre-logo.svg"
 
+    [contacts]
+        email = ""
+        phoneNumber = ""
+        address = ""
+
 # Menus
 [[menu.main]]
     name = "Home"
