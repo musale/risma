@@ -1,6 +1,7 @@
 baseURL = "https://oledz.github.com/risma"
 languageCode = "en-us"
 title = "Risma"
+tagline = "The Best Hugo Theme"
 theme = "risma"
 
 # Menus
