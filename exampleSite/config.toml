@@ -5,7 +5,7 @@ theme = "risma"
 
 [params]
     tagline = "The Best Hugo Theme"
-    logoUrl = "/some/localurl.png"
+    logoUrl = "https://picturepan2.github.io/spectre/img/spectre-logo.svg"
 
 # Menus
 [[menu.main]]
