@@ -7,7 +7,7 @@
       <dl class="navbar-brand">
         <dt class="h3">{{.Site.Title}}</dt>
         {{if .Site.Params.tagline}}
-          <dt class="text-muted">{{.Site.Params.tagline | toLower}}</dt>
+          <dt class="text-muted">{{.Site.Params.tagline | lower}}</dt>
         {{end}}
       </dl>
     {{end}}
