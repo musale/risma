@@ -1,12 +1,12 @@
-<header class="navbar bg-secondary container">
+<header class="navbar bg-secondary container mx-2 hp-2">
   <section class="navbar-section">
     {{if .Site.Params.logoUrl}}
       <img src="{{.Site.Params.logoUrl}}" alt="{{.Site.Title}} Logo" />
     {{end}}
     {{if .Site.Title}}
-      <a href="..." class="navbar-brand mr-2">{{.Site.Title}}
+      <a href="..." class="navbar-brand mr-2 mx-1">{{.Site.Title}}
         {{if .Site.Params.tagline}}
-        <small class="label label-secondary text-bold">{{.Site.Params.tagline}}</small>
+          <small class="text-muted">{{.Site.Params.tagline | toLower}}</small>
         {{end}}
       </a>
     {{end}}
