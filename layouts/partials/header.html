@@ -25,8 +25,9 @@
   <section class="navbar-section">
     <div class="tile tile-centered">
       <div class="tile-content">
-        {{if .Site.Params.Contacts.Email}}<div class="tile-title">{{.Site.Params.Contacts.Email}}</div>{{end}}
-        <small class="tile-subtitle text-gray">14MB · Public · 1 Jan, 2017</small>
+        {{if .Site.Params.Contacts.Email}}<div class="text-large">{{.Site.Params.Contacts.Email}}</div>{{end}}
+        {{if .Site.Params.Contacts.phoneNumber}}<div class="text-small">{{.Site.Params.Contacts.phoneNumber}}</div>{{end}}
+        {{if .Site.Params.Contacts.address}}<div class="text-tiny">{{.Site.Params.Contacts.address}}</div>{{end}}
       </div>
     </div>
   </section>

@@ -7,10 +7,10 @@ theme = "risma"
     tagline = "The Best Hugo Theme"
     logoUrl = "https://picturepan2.github.io/spectre/img/spectre-logo.svg"
 
-    [contacts]
-        email = ""
-        phoneNumber = ""
-        address = ""
+[params.Contacts]
+    email = "info@risma.com"
+    phoneNumber = "0123-081093-912"
+    address = "Loiusville, CA"
 
 # Menus
 [[menu.main]]
