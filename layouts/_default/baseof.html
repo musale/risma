@@ -1,20 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        {{ with .Site.Params.author }} <meta name="author" content="{{ . }}"> {{ end }}
-        {{ with .Site.Params.description }} <meta name="description" content="{{ . }}"> {{ end }}
-        {{ with .Site.Params.keywords }} <meta name="keywords" content="{{ . }}"> {{ end }}
-        <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
-        <link rel="stylesheet" href='{{ "css/base.css" | relURL}}' />
-    </head>
-
+    {{ partial "head.html" .}}
     <body>
         <div class="main container">
             {{ block "head" .}}

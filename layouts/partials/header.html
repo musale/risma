@@ -1,28 +1,36 @@
 <header class="navbar">
-    <section class="navbar-section">
-        <a href="..." class="navbar-brand mr-2">{{.Site.Title}}</a>
-    </section>
-    <section class="navbar-center">
-        {{ range .Site.Menus.main }}
-            <a href="{{ .URL }}" title="{{ .Name }}" class="btn btn-link">{{ .Name }}</a>
-        {{ end }}
-    </section>
-    <section class="navbar-section">
-        <div class="tile tile-centered">
-            <div class="tile-icon">
-              <div class="example-tile-icon">
-                <i class="icon icon-file centered"></i>
-              </div>
-            </div>
-            <div class="tile-content">
-              <div class="tile-title">spectre-docs.pdf</div>
-              <small class="tile-subtitle text-gray">14MB · Public · 1 Jan, 2017</small>
-            </div>
-            <div class="tile-action">
-              <button class="btn btn-link">
-                <i class="icon icon-more-vert"></i>
-              </button>
-            </div>
-          </div>
-    </section>
+  <section class="navbar-section docs-brand">
+    <a class="docs-logo" href='{{"/" | absUrl }}'>
+      {{if .Site.logoUrl}}
+      <img src="{{.Site.logoUrl}}"" alt=" {{.Site.Title}} Logo" />
+      {{end}}
+      <h2 class="navbar-brand mr-2">{{.Site.Title}}</h2>
+      {{if .Site.tagline}}
+      <small class="label label-secondary text-bold">{{.Site.tagline}}</small>
+      {{end}}
+    </a>
+  </section>
+  <section class="navbar-center">
+    {{ range .Site.Menus.main }}
+    <a href="{{ .URL }}" title="{{ .Name }}" class="btn btn-link">{{ .Name }}</a>
+    {{ end }}
+  </section>
+  <section class="navbar-section">
+    <div class="tile tile-centered">
+      <div class="tile-icon">
+        <div class="example-tile-icon">
+          <i class="icon icon-file centered"></i>
+        </div>
+      </div>
+      <div class="tile-content">
+        <div class="tile-title">spectre-docs.pdf</div>
+        <small class="tile-subtitle text-gray">14MB · Public · 1 Jan, 2017</small>
+      </div>
+      <div class="tile-action">
+        <button class="btn btn-link">
+          <i class="icon icon-more-vert"></i>
+        </button>
+      </div>
+    </div>
+  </section>
 </header>
