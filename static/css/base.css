@@ -12,7 +12,10 @@ body {
 }
 .main {
   flex: 1 0 auto;
+  padding: 0px 2rem;
+  width: calc(100vw - 1rem);
 }
+
 footer {
   flex-shrink: 0;
 }
