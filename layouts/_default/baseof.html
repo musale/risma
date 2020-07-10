@@ -2,14 +2,12 @@
 <html lang="{{ .Site.Language.Lang }}">
     {{ partial "head.html" . }}
     <body>
-        <div class="main container">
-            {{ block "head" .}}
-                {{ partial "header.html" . }}
-            {{ end }}
+        {{ block "head" .}}
+            {{ partial "header.html" . }}
+        {{ end }}
 
-            <div class="section">
-                {{ block "main" . }}{{ end }}
-            </div>
+        <div class="section main">
+            {{ block "main" . }}{{ end }}
         </div>
 
         {{ block "footer" . }}
