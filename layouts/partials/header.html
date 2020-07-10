@@ -1,12 +1,12 @@
 <header class="navbar">
   <section class="navbar-section docs-brand">
     <a class="docs-logo" href='{{"/" | absURL }}'>
-      {{if .Site.logoUrl}}
-      <img src="{{.Site.logoUrl}}" alt=" {{.Site.Title}} Logo" />
+      {{if .Site.Params.logoUrl}}
+        <img src="{{.Site.Params.logoUrl}}" alt="{{.Site.Title}} Logo" />
       {{end}}
       <h2 class="navbar-brand mr-2">{{.Site.Title}}</h2>
-      {{if .Site.tagline}}
-      <small class="label label-secondary text-bold">{{.Site.tagline}}</small>
+      {{if .Site.Params.tagline}}
+        <small class="label label-secondary text-bold">{{.Site.Params.tagline}}</small>
       {{end}}
     </a>
   </section>
